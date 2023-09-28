@@ -8,6 +8,7 @@ const onBeforeRender: Config['onBeforeRender'] = async (
 ): Promise<{ pageContext: Partial<Vike.PageContext> }> => {
   await sleep(700) // Simulate slow network
   const movies = await getStarWarsMovies()
+  debugger // LA_TEMP
   return {
     pageContext: {
       pageProps: {
